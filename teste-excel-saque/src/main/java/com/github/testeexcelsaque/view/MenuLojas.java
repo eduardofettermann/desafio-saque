@@ -1,8 +1,11 @@
-package com.github.testeexcelsaque;
+package com.github.testeexcelsaque.view;
+
+import com.github.testeexcelsaque.loja.LojaDTO;
+import com.github.testeexcelsaque.util.ConversorDeCsvParaHashMap;
 
 import java.util.HashMap;
 
-public class MenuAplicacao {
+public class MenuLojas {
     ConversorDeCsvParaHashMap conversorDeCsvParaHashMap;
 
     public void retornaLojas() {
