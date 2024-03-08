@@ -34,7 +34,8 @@ public class LeitorDeDadosCSV {
 
     public LeitorDeDadosCSV() {
         try {
-            this.setArquivoCSV("C:\\Users\\eduar\\Desktop\\teste-excel-saque\\teste-excel-saque\\teste-excel-ponto-virgula.CSV");
+            String caminhoDoArquivo = "C:\\Users\\eduar\\Desktop\\teste-excel-saque\\teste-excel-saque\\teste-excel-ponto-virgula.CSV";
+            this.setArquivoCSV(caminhoDoArquivo);
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
             System.err.println("Ocorreu um erro: Arquivo não encontrado! Verifique se o caminho indicado do arquivo .csv está correto!");
