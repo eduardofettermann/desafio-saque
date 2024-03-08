@@ -9,9 +9,7 @@ import java.util.List;
 public class ConversorDeHashMapParaList {
     public List<LojaDTO> retornaLojasConvertidasEmList(HashMap<String, LojaDTO> hashMapLojas) {
         List<LojaDTO> lojasList = new ArrayList<>();
-        for (LojaDTO loja : hashMapLojas.values()) {
-            lojasList.add(loja);
-        }
+        lojasList.addAll(hashMapLojas.values());
         return lojasList;
     }
 }
