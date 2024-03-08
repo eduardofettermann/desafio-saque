@@ -1,4 +1,6 @@
-package com.github.testeexcelsaque;
+package com.github.testeexcelsaque.util;
+
+import com.github.testeexcelsaque.loja.LojaDTO;
 
 import java.util.HashMap;
 
