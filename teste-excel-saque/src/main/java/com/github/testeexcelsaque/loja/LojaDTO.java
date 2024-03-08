@@ -18,7 +18,7 @@ public class LojaDTO {
     private double resultadoFinanceiro;
     private double provisaoBarraPerda;
     private double ppr;
-    private double IrBarraCsll;
+    private double irBarraCsll;
 
     @Override
     public String toString() {
@@ -31,7 +31,7 @@ public class LojaDTO {
                 ", resultadoFinanceiro=" + resultadoFinanceiro +
                 ", provisaoBarraPerda=" + provisaoBarraPerda +
                 ", ppr=" + ppr +
-                ", IrBarraCsll=" + IrBarraCsll +
+                ", IrBarraCsll=" + irBarraCsll +
                 '}';
     }
 }
