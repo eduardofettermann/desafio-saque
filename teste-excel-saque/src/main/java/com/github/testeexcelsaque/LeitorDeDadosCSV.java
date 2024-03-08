@@ -18,9 +18,14 @@ public class LeitorDeDadosCSV {
         try {
             proximaLinha = leitorBufferizado.readLine();
             dadosDaLinha = proximaLinha.split(";");
+            if (dadosDaLinha.length < 3) {
+                dadosDaLinha[0] = "Array";
+            }
             return dadosDaLinha;
         } catch (IOException e) {
             throw new RuntimeException(e);
+        } catch (IndexOutOfBoundsException e) {
+            throw new IndexOutOfBoundsException("Pode ser que linhas da tabela estejam sem valor, então foi gerado um erro: " + e.getMessage());
         }
     }
 
