@@ -1,4 +1,4 @@
-package com.github.testeexcelsaque;
+package com.github.testeexcelsaque.loja;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
