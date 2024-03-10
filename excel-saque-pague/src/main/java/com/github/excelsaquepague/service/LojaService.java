@@ -1,11 +1,11 @@
-package com.github.testeexcelsaque.service;
+package com.github.excelsaquepague.service;
 
-import com.github.testeexcelsaque.loja.FuncaoMaiorMenor;
-import com.github.testeexcelsaque.loja.FuncaoRanking;
-import com.github.testeexcelsaque.loja.LojaDTO;
-import com.github.testeexcelsaque.loja.LojaModel;
-import com.github.testeexcelsaque.util.ConversorDeCsvParaHashMap;
-import com.github.testeexcelsaque.util.ConversorDeHashMapParaList;
+import com.github.excelsaquepague.loja.FuncaoMaiorMenor;
+import com.github.excelsaquepague.loja.FuncaoRanking;
+import com.github.excelsaquepague.loja.LojaDTO;
+import com.github.excelsaquepague.loja.LojaModel;
+import com.github.excelsaquepague.util.ConversorDeCsvParaHashMap;
+import com.github.excelsaquepague.util.ConversorDeHashMapParaList;
 
 import java.util.ArrayList;
 import java.util.Comparator;

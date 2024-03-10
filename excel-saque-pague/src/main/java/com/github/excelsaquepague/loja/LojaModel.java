@@ -1,6 +1,6 @@
-package com.github.testeexcelsaque.loja;
+package com.github.excelsaquepague.loja;
 
-import com.github.testeexcelsaque.util.ConverteOpostoDoNumero;
+import com.github.excelsaquepague.util.ConverteOpostoDoNumero;
 import lombok.Getter;
 import lombok.Setter;
 

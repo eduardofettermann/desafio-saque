@@ -1,4 +1,4 @@
-package com.github.testeexcelsaque.util;
+package com.github.excelsaquepague.util;
 
 public class ConverteOpostoDoNumero {
     public static double retornaOpostoDoNumero(double valor) {

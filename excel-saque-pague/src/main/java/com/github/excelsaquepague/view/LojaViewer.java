@@ -1,9 +1,9 @@
-package com.github.testeexcelsaque.view;
+package com.github.excelsaquepague.view;
 
-import com.github.testeexcelsaque.loja.FuncaoMaiorMenor;
-import com.github.testeexcelsaque.loja.FuncaoRanking;
-import com.github.testeexcelsaque.loja.LojaModel;
-import com.github.testeexcelsaque.service.LojaService;
+import com.github.excelsaquepague.loja.FuncaoMaiorMenor;
+import com.github.excelsaquepague.loja.FuncaoRanking;
+import com.github.excelsaquepague.loja.LojaModel;
+import com.github.excelsaquepague.service.LojaService;
 
 import java.text.DecimalFormat;
 import java.util.List;

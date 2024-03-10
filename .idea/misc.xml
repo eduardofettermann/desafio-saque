@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/teste-excel-saque/pom.xml" />
+        <option value="$PROJECT_DIR$/excel-saque-pague/pom.xml" />
       </list>
     </option>
   </component>

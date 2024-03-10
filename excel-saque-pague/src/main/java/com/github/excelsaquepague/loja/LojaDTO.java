@@ -1,4 +1,4 @@
-package com.github.testeexcelsaque.loja;
+package com.github.excelsaquepague.loja;
 
 import lombok.*;
 

@@ -1,4 +1,4 @@
-package com.github.testeexcelsaque.loja;
+package com.github.excelsaquepague.loja;
 
 public enum FuncaoMaiorMenor {
     MAXIMO("maximo"),

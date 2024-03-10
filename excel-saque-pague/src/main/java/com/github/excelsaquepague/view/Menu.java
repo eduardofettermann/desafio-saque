@@ -1,7 +1,7 @@
-package com.github.testeexcelsaque.view;
+package com.github.excelsaquepague.view;
 
-import com.github.testeexcelsaque.loja.FuncaoMaiorMenor;
-import com.github.testeexcelsaque.loja.FuncaoRanking;
+import com.github.excelsaquepague.loja.FuncaoMaiorMenor;
+import com.github.excelsaquepague.loja.FuncaoRanking;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
