@@ -1,13 +1,11 @@
 package com.github.testeexcelsaque;
 
-import com.github.testeexcelsaque.loja.FuncaoMaiorMenor;
-import com.github.testeexcelsaque.loja.FuncaoRanking;
-import com.github.testeexcelsaque.view.LojaViewer;
+import com.github.testeexcelsaque.view.Menu;
 
 public class TesteExcelSaqueApplication {
 
     public static void main(String[] args) {
-        LojaViewer view = new LojaViewer();
-        view.imprimeRankingLojas(FuncaoRanking.CUSTO, 10, FuncaoMaiorMenor.MINIMO);
+        Menu menu = new Menu();
+        menu.exibeMenuPrincipal();
     }
 }
