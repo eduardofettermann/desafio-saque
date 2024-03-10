@@ -1,4 +1,4 @@
-package com.github.testeexcelsaque;
+package com.github.excelsaquepague.util;
 
 import lombok.Getter;
 
@@ -16,14 +16,16 @@ public class LeitorDeDadosCSV {
         String[] dadosDaLinha;
         String proximaLinha;
         try {
-            System.out.println("Comecando leitura");
             proximaLinha = leitorBufferizado.readLine();
-            System.out.println("Linha lida");
             dadosDaLinha = proximaLinha.split(";");
-            System.out.println("Linha dividida");
+            if (dadosDaLinha.length < 3) {
+                dadosDaLinha[0] = "Array";
+            }
             return dadosDaLinha;
         } catch (IOException e) {
             throw new RuntimeException(e);
+        } catch (IndexOutOfBoundsException e) {
+            throw new IndexOutOfBoundsException("Pode ser que linhas da tabela estejam sem valor, então foi gerado um erro: " + e.getMessage());
         }
     }
 
@@ -35,12 +37,10 @@ public class LeitorDeDadosCSV {
         }
     }
 
-    public LeitorDeDadosCSV() {
+    public LeitorDeDadosCSV(String urlDoArquivoCSV) {
         try {
-            System.out.println("Iniciando leitor de dados csv");
-            System.out.println("...setar arquivo csv");
-            this.setArquivoCSV("C:\\Users\\eduar\\Desktop\\teste-excel-saque\\teste-excel-saque\\teste-excel-ponto-virgula.CSV");
-            System.out.println("Arquivo csv setado");
+            String caminhoDoArquivo = urlDoArquivoCSV;
+            this.setArquivoCSV(caminhoDoArquivo);
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
             System.err.println("Ocorreu um erro: Arquivo não encontrado! Verifique se o caminho indicado do arquivo .csv está correto!");

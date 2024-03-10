@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.github</groupId>
-    <artifactId>teste-excel-saque</artifactId>
+    <artifactId>excel-saque-pague</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>teste-excel-saque</name>
-    <description>Demo project for Spring Boot</description>
+    <name>excel-saque-pague</name>
+    <description>Solução do desafio excel do Saque e Pague</description>
     <properties>
         <java.version>17</java.version>
     </properties>
