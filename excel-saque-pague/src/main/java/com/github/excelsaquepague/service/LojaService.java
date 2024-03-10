@@ -51,6 +51,30 @@ public class LojaService {
                             lojasRankeadas = lojas.stream().sorted(Comparator.comparing(LojaModel::getCusto)).limit(limiteDoResultado).toList();
                 }
             }
+            case DESPESA -> {
+                switch (funcaoMaiorMenor) {
+                    case MAXIMO ->
+                            lojasRankeadas = lojas.stream().sorted(Comparator.comparing(LojaModel::getDespesa).reversed()).limit(limiteDoResultado).toList();
+                    case MINIMO ->
+                            lojasRankeadas = lojas.stream().sorted(Comparator.comparing(LojaModel::getDespesa)).limit(limiteDoResultado).toList();
+                }
+            }
+            case RESULTADO_OPERACIONAL -> {
+                switch (funcaoMaiorMenor) {
+                    case MAXIMO ->
+                            lojasRankeadas = lojas.stream().sorted(Comparator.comparing(LojaModel::getResultadoOperacional).reversed()).limit(limiteDoResultado).toList();
+                    case MINIMO ->
+                            lojasRankeadas = lojas.stream().sorted(Comparator.comparing(LojaModel::getResultadoOperacional)).limit(limiteDoResultado).toList();
+                }
+            }
+            case MARGEM_OPERACIONAL -> {
+                switch (funcaoMaiorMenor) {
+                    case MAXIMO ->
+                            lojasRankeadas = lojas.stream().sorted(Comparator.comparing(LojaModel::getMargemOperacional).reversed()).limit(limiteDoResultado).toList();
+                    case MINIMO ->
+                            lojasRankeadas = lojas.stream().sorted(Comparator.comparing(LojaModel::getMargemOperacional)).limit(limiteDoResultado).toList();
+                }
+            }
             case LUCRATIVIDADE -> {
                 switch (funcaoMaiorMenor) {
                     case MAXIMO ->
