@@ -1,4 +1,4 @@
-package com.github.testeexcelsaque.util;
+package com.github.excelsaquepague.util;
 
 import lombok.Getter;
 
@@ -37,9 +37,9 @@ public class LeitorDeDadosCSV {
         }
     }
 
-    public LeitorDeDadosCSV() {
+    public LeitorDeDadosCSV(String urlDoArquivoCSV) {
         try {
-            String caminhoDoArquivo = "C:\\Users\\eduar\\Desktop\\teste-excel-saque\\teste-excel-saque\\teste-excel-ponto-virgula.CSV";
+            String caminhoDoArquivo = urlDoArquivoCSV;
             this.setArquivoCSV(caminhoDoArquivo);
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());

@@ -1,12 +1,21 @@
-package com.github.testeexcelsaque.util;
+package com.github.excelsaquepague.util;
 
-import com.github.testeexcelsaque.loja.LojaDTO;
+import com.github.excelsaquepague.loja.LojaDTO;
 
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class ConversorDeCsvParaHashMap {
+    public static final Scanner SCANNER = new Scanner(System.in);
+
     public HashMap<String, LojaDTO> retornaHashMapDeLojas() {
-        LeitorDeDadosCSV leitor = new LeitorDeDadosCSV();
+        System.out.println("""
+                                
+                Digite o caminho do arquivo .CSV
+                                
+                """);
+        String caminhoDoArquivo = SCANNER.nextLine();
+        LeitorDeDadosCSV leitor = new LeitorDeDadosCSV(caminhoDoArquivo);
         String[] cabecalhoDasColunas = leitor.retornaProximaLinhaFracionada();
 
         HashMap<String, LojaDTO> lojas = new HashMap<>();
